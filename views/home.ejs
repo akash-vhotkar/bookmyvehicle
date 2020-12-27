@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://kit.fontawesome.com/5c174d451e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+
+    <title style="color: purple;">bookmy </title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+
+    .vehicles {
+        height: 40vh;
+    }
+
+    .mydiv button {
+        width: 20vw;
+        height: 10%;
+        font-size: 1.5vw;
+        background-color: white;
+        color: black;
+        margin-left: 3vw;
+    }
+
+    .divmenu {
+        width: 20vw;
+
+
+    }
+
+    .showcase2 {
+        margin: auto;
+    }
+
+    .showcase2 input {
+        outline: none;
+        border: rgba(0, 0, 0, 0.3);
+    }
+
+    .showcase {
+        background: linear-gradient(to right, #ff00cc, #333399);
+        height: 50vh;
+
+    }
+
+    .vehicle-fea {
+        height: 70vh;
+        text-align: center;
+    }
+
+    .icons {
+        font-size: 15vw;
+        text-align: center;
+    }
+
+    .parent-div {
+        background-color: rgb(217, 217, 217);
+
+    }
+
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+
+    .card img {
+        border-radius: 50%;
+        width: 15vw;
+
+        margin: auto;
+        height: 15vw;
+
+    }
+
+    .why-section {
+        background-color: rgb(217, 217, 217);
+    }
+
+    .why-section img {
+        width: 7vw;
+        height: 7vw;
+        border-radius: 0.5vw;
+
+    }
+
+    .why-section .whysection {
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .myfooter {
+        background-color: black;
+    }
+</style>
+
+<body>
+    <%- include('partials/customernavbar')%>
+
+        <div class="container-fluid  showcase">
+            <div class="row text-center py-5 text-white">
+                <h1>Hey were you want to go</h1>
+                <h1>BOOK <span><i class="fas fa-taxi"></i> </span> NOW</h1>
+            </div>
+            <div class="container showcase2 d-flex">
+
+
+                <select class="form-select form-select-lg w-25 m-2" aria-label=".form-select-lg example">
+                    <option selected>Vehicle Type</option>
+                    <option value="1">Cab</option>
+                    <option value="2">Taxi</option>
+                    <option value="3">auto</option>
+                    <option value="4">tempo</option>
+                </select>
+
+
+                <input class="form-control-sm w-25 m-2" list="datalistOptions" id="exampleDataList" placeholder="FROM">
+                <datalist id="datalistOptions">
+                    <option value="mumbai">
+                    <option value="pune">
+                    <option value="panjab">
+                    <option value="nashik">
+                    <option value="hydrabad">
+                </datalist>
+
+                <input class="form-control-sm w-25 m-2 " list="datalistOptions" id="exampleDataList" placeholder="TO">
+                <datalist id="datalistOptions">
+                    <option value="hydrabad">
+                    <option value="pune">
+                    <option value="mumbai">
+                    <option value="aurangabad">
+                    <option value="nashik">
+                </datalist>
+
+
+
+
+                <div class=" d-md-inline m-2">
+                    <button class="btn btn-primary btn-primary p-2" type="button">
+                        BOOK A RIDE NOW
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <div class="container text-center  py-5">
+            <h1>A car for every occasion</h1>
+            <p>bookmyvehicle offers city taxis, inter-city cabs, and local cabs at hourly packages</p>
+        </div>
+
+
+
+
+        <div class="container-fluid parent-div">
+            <div class="container d-md-flex ">
+
+
+                <div class="card  m-4" style="width: 30%;">
+                    <img src="/images/taxi3.jpg" class="card-img-top mt-3 " alt="taxi-image">
+                    <div class="card-body">
+                        <h5 class="card-title">city taxi</h5>
+                        <p class="card-text"> The perfect way to get through your everyday travel needs. City taxis are
+                            available 24/7 and you can book and travel in an instant. With rides starting from as low as
+                            Rs. 6/km, you can choose from a wide range of options! You can also opt to do your bit for
+                            the environment with Ola Share!
+                        </p>
+                        <a href="#" class="btn btn-primary">BOOK NOW</a>
+                    </div>
+                </div>
+
+
+                <div class="card  m-4" style="width: 30%;">
+                    <img src="/images/taxi2.jpg" class="card-img-top mt-3" alt="taxi-image">
+                    <div class="card-body">
+                        <h5 class="card-title">outstation</h5>
+                        <p class="card-text">
+                            Ride out of town at affordable one-way and round-trip fares with Ola’s intercity travel
+                            service. Choose from a range of AC cabs driven by top partners, available in 1 hour or book
+                            upto 7 days in advance. We have you covered across India with presence in 90+ cities with
+                            over 500 one way routes.
+                        </p>
+                        <a href="#" class="btn btn-primary">BOOK NOW</a>
+                    </div>
+                </div>
+
+
+                <div class="card m-4 " style="width: 30%;">
+                    <img src="/images/taxi1.jpg" class="card-img-top mt-3" alt="taxi-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Rentals</h5>
+                        <p class="card-text">
+                            With Ola Rentals you get a cab at your disposal. So be it a day long business meeting, a
+                            shopping trip with your friends or just a day out in a new city, we have you covered.
+                            Packages start at 1 hour and can be extended upto 12 hours!
+                        </p>
+                        <a href="#" class="btn btn-primary">BOOK A RIDE</a>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+        </div>
+        <div class="container text-center  py-5 ">
+            <h3>Why ride with book my taxi</h3>
+            <p>The best way to travel to your destination
+            </p>
+        </div>
+
+
+
+        <div class="container-fluid why-section ">
+            <div class="container">
+
+                <div class="row  ">
+                    <div class="col-md-5 d-flex whysection m-3">
+                        <div class="m-3">
+
+
+                            <img src="/images/taxi1.jpg" class="img-rounded" alt="myimage">
+                        </div>
+
+                        <div class="m-3">
+                            <h4>cabs for every posket</h4>
+                            <p>From Sedans and SUVs to Luxury cars for special occasions, we have cabs to suit every
+                                pocket
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 d-flex whysection m-3">
+                        <div class="m-3">
+
+
+                            <img src="/images/taxi1.jpg" class="img-rounded" alt="myimage">
+                        </div>
+
+                        <div class="m-3">
+                            <h4>cabs for every posket</h4>
+                            <p>From Sedans and SUVs to Luxury cars for special occasions, we have cabs to suit every
+                                pocket
+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="row  ">
+                    <div class="col-md-5 d-flex whysection m-3">
+                        <div class="m-3">
+
+
+                            <img src="/images/taxi1.jpg" class="img-rounded" alt="myimage">
+                        </div>
+
+                        <div class="m-3">
+                            <h4>cabs for every posket</h4>
+                            <p>From Sedans and SUVs to Luxury cars for special occasions, we have cabs to suit every
+                                pocket
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 d-flex whysection m-3">
+                        <div class="m-3">
+
+
+                            <img src="/images/taxi1.jpg" class="img-rounded" alt="myimage">
+                        </div>
+
+                        <div class="m-3">
+                            <h4>cabs for every posket</h4>
+                            <p>From Sedans and SUVs to Luxury cars for special occasions, we have cabs to suit every
+                                pocket
+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="row  ">
+                    <div class="col-md-5 d-flex whysection m-3">
+                        <div class="m-3">
+
+
+                            <img src="/images/taxi1.jpg" class="img-rounded" alt="myimage">
+                        </div>
+
+                        <div class="m-3">
+                            <h4>cabs for every posket</h4>
+                            <p>From Sedans and SUVs to Luxury cars for special occasions, we have cabs to suit every
+                                pocket
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 d-flex whysection m-3">
+                        <div class="m-3">
+
+
+                            <img src="/images/taxi1.jpg" class="img-rounded" alt="myimage">
+                        </div>
+
+                        <div class="m-3">
+                            <h4>cabs for every posket</h4>
+                            <p>From Sedans and SUVs to Luxury cars for special occasions, we have cabs to suit every
+                                pocket
+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Footer -->
+        <footer class="bg-dark text-center text-lg-start text-white myfooter">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">BOOkmytaxi</h5>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+                            voluptatem veniam, est atque cumque eum delectus sint!
+                        </p>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Discover book mytaxi</h5>
+
+                        <ul class="list-unstyled mb-0 text-white">
+                            <li>
+                                <a href="#!" class="text-white text-decoration-none">About the bookmytaxi</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white text-decoration-none">offers</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white text-decoration-none">Contact us</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white text-decoration-none">Media query</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-0">Top cities</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#" class="text-white text-decoration-none">Mumbai</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none">Pune</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none">Nashik</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white  text-decoration-none">BID</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                </div>
+
+            </div>
+
+
+
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2020 Copyright:
+                <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+
+        </footer>
+        <!-- Footer -->
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+            integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+            integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+            crossorigin="anonymous"></script>
+        <script>
+
+
+
+        </script>
+
+</body>
+
+</html>
